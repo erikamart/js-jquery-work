@@ -1,0 +1,145 @@
+ul li a{
+    padding-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+body {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+	background: url(/img/summerbg.jpg);
+	background-size: auto;
+	background-position: center;
+}
+
+.topBottom{
+    background-color: rgba(255,255,255,.45);
+    text-align: center;
+    border-radius: 5px;
+}
+
+#project3 {
+    border-right: none;
+}
+
+#specials {
+	width: 10em;
+	float: right;
+	padding: .5em 1em;
+	border: medium gray groove;
+	border-radius: 10px;
+	margin-left: 1em;
+	font-weight: bolder;
+}
+
+#content {
+	width: 50em;
+	margin: 10em auto;
+	border: outset thick gray;
+	border-radius: 10px;
+	background-color: rgba(255,255,255,.9);
+	padding: 2em;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.error {
+	color: red;
+}
+
+a:link {
+	color: darkgreen;
+}
+
+a:visited {
+	color: darkgreen;
+}
+
+legend {
+	font-family: 'Courier New', Courier, monospace;
+	color: darkgreen;
+}
+
+h1, h2, h3 {
+	color: darkgreen;
+	text-align: center;
+	line-height: .7em;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+label {
+	display: inline-block;
+	width: 20em;
+	text-align: right;
+	line-height: 1.5em;
+	padding-right: 1em;
+}
+
+th[colspan] {
+	text-align: right;
+}
+
+table {
+	border: thin solid darkgreen;
+	background-color: cornsilk;
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+
+td, th {
+	padding: .25em 1em;
+	border: thin green dotted;
+}
+
+td[id] {
+	text-align: right;
+}
+
+input[type='submit'] {
+	background-color: palegoldenrod;
+	font-size: .8em;
+	border-radius: 5px;
+	border: thin outset green;
+}
+
+#place {
+	text-align: center;
+}
+
+#main {clear: left;
+}
+
+.Fall {
+	background-image: linear-gradient(
+	0deg, rgba(255,255,255, .50), rgba(255,255,255, .50)), url(/img/fall.gif);
+	background-size: 100% 100%;
+	background-color: palegoldenrod;
+	text-align: center;
+}
+
+.Winter {
+	background-image: url(/img/winter.gif);
+	background-size: 100% 100%;
+	background-color: lightblue;
+	text-align: center;
+}
+
+.Summer {
+	background-image: linear-gradient(
+	0deg, rgba(255,255,255, .50), rgba(255,255,255, .50)), url(/img/summer.gif);
+	background-size: 100% 100%;
+	background-color: lightyellow;
+	text-align: center;
+}
+
+.Spring {
+	background-image: linear-gradient(
+	0deg, rgba(255,255,255, .75), rgba(255,255,255, .75)), url(/img/spring.gif);
+	background-size: 100% 100%;
+	background-color: palegreen;
+	text-align: center;
+}
+
