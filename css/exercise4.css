@@ -5,15 +5,18 @@ ul li a{
 }
 
 body {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	z-index: -1;
-	height: 100%;
-	width: 100%;
-	background: url(/img/summerbg.jpg);
-	background-size: auto;
-	background-position: center;
+	padding: 0px 20%;
+	background-image: url(/img/backbeanie.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+@media (max-width: 750px) {
+	body {
+		padding: 0px 5%;
+	}
 }
 
 .topBottom{
@@ -37,13 +40,21 @@ body {
 }
 
 #content {
-	width: 50em;
-	margin: 10em auto;
 	border: outset thick gray;
 	border-radius: 10px;
 	background-color: rgba(255,255,255,.9);
-	padding: 2em;
+	padding: 1em;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 1.25em;
+}
+
+.form-width {
+	min-width: 645px;
+}
+
+.orderlink {
+	margin-top: 30px;
+	text-align: center;
 }
 
 .error {
@@ -51,20 +62,20 @@ body {
 }
 
 a:link {
-	color: darkgreen;
+	color: black;
 }
 
 a:visited {
-	color: darkgreen;
+	color: black;
 }
 
 legend {
 	font-family: 'Courier New', Courier, monospace;
-	color: darkgreen;
+	color: #011892;
 }
 
 h1, h2, h3 {
-	color: darkgreen;
+	color: #011892;
 	text-align: center;
 	line-height: .7em;
 	font-family: 'Courier New', Courier, monospace;
@@ -83,8 +94,8 @@ th[colspan] {
 }
 
 table {
-	border: thin solid darkgreen;
-	background-color: cornsilk;
+	border: thin solid gray;;
+	background-color: lightsteelblue;
 	border-collapse: collapse;
 	margin: 0 auto;
 }
@@ -99,17 +110,18 @@ td[id] {
 }
 
 input[type='submit'] {
-	background-color: palegoldenrod;
+	background-color: lightblue;
 	font-size: .8em;
 	border-radius: 5px;
-	border: thin outset green;
+	border: thin outset gray;
 }
 
 #place {
 	text-align: center;
 }
 
-#main {clear: left;
+#main {
+	clear: left;
 }
 
 .Fall {
@@ -143,3 +155,35 @@ input[type='submit'] {
 	text-align: center;
 }
 
+
+/* exercise5-orderform css */
+nav {
+	text-align: center;
+}
+
+#pltTitle {
+	color: #07a;
+}
+
+.botanic {
+	color: darkgreen;
+	font-style: italic;
+}
+.col {
+	width: 20em;
+	padding: 1em;
+	float: left;
+}
+
+footer {
+	clear: both;
+}
+
+.imgdiv {
+	position: absolute;
+}
+
+.pic {
+	border-bottom: thin dashed darkgreen;
+}
+/* exercise5-orderform css */
