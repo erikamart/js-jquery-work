@@ -27,16 +27,16 @@ let quotes = ["'We are all here on earth to help others; what on earth the other
 let favNumber = prompt("What is your favorite number?");
 
 // 3. Divide the number by 5 and get the remainder (modulus). 
-let quoteIndex = val % 5;
+let quoteIndex = favNumber % 5;
 
 // 4. Use the remainder as the array index and write that quote to the page.
 let quoting2 = document.getElementById("quoting");
 quoting2.innerHTML = '<p>Quote of the Day: ' + quotes[quoteIndex] + '</p>';
 
 // 5. Create an array of 3 favorite website urls.
-let websiteUrls = ["https://www.amazon.com/",
-    "http://www.huffingtonpost.com/",
-    "https://www.buzzfeed.com/"];
+let websiteUrls = ["https://www.w3schools.com",
+    "https://www.youtube.com",
+    "https://www.pennymonkey.com"];
 
 // 6. Loop through initial url list and construct unordered list and write them out on the web page as working links.
 let initialList2 = document.getElementById("initialList");
@@ -46,7 +46,7 @@ for (i in websiteUrls) {
 
 // 7. Prompt the user to enter their favorite website. 
 let newUrls = websiteUrls;
-let favWeb = prompt("What is your favorite website?");
+let favWeb = prompt("What is your favorite website? Include the www and .com please!");
 newUrls.shift();
 newUrls.push(favWeb);
 for (i in newUrls) {
