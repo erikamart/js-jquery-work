@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>JavaScript Form Validation</title>
+	<title>JS Forms</title>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<!-- My CSS -->
@@ -21,9 +21,9 @@
 		<h1>EXERCISE 5</h1>
 	</div>
 	<hr>
-	<div id="content" class="form-width">
+	<div id="content">
 		<header>
-			<h1>Monkeys Beanies</h1>
+			<h1>Beanie Monkey</h1>
 			<h2>Order Form</h2>
 		</header>
 		<!-- <nav>
@@ -34,55 +34,48 @@
 			<form name="order" id="order" method="post" action="thanks.html">
 				<fieldset>
 					<legend>Personal Information</legend>
-					<p><label for="name">Name:</label>
-						<input type="text" name="name" id="name" required>
-						<span id="nameerr" class="error"></span>
-						<br><label for="address">Billing Address:</label>
-						<input type="text" name="address" id="address" required>
-						<span id="addresserr" class="error"></span>
-						<br><label for="city">City:</label>
-						<input type="text" name="city" id="city" required>
-						<span id="cityerr" class="error"></span>
-						<br><label for="state">State: </label>
-						<select name="state" id="state">
-							<option>--</option>
-							<option value="CA">California</option>
-							<option value="CO">Colorado</option>
-							<option value="ID">Idaho</option>
-							<option value="MT">Montana</option>
-							<option value="NE">Nebraska</option>
-							<option value="OR">Oregon</option>
-							<option value="WA">Washington</option>
-							<option value="WY">Wyoming</option>
-
-						</select>
-						<span id="stateerr" class="error"></span>
-						<br><label for="zip">Zip Code:</label>
-						<input type="text" name="zip" id="zip" required>
-						<span id="ziperr" class="error"></span>
-						<br><label for="email">Email:</label>
-						<input type="email" name="email" id="email" required>
-						<span id="emailerr" class="error"></span>
-						<br><label for="email2">Confirm email:</label>
-						<input type="email" name="email2" id="email2" required>
-						<br><label for="shipdate">Ship date:</label> <input type="text" name="shipdate" id="shipdate">
-					</p>
-
-				</fieldset>
-				<fieldset>
-					<legend>Shipping Address</legend>
-					<p><label><input type="checkbox" name="copy" id="copy"> Copy billing address</label>
-						<!-- span tag to hide shipping info   -->
-						<span id="shipping">
-							<br><label for="shipaddr">Shipping Address:</label>
-							<input type="text" name="shipaddr" id="shipaddr" required>
-							<span id="shipaddrerr" class="error"></span>
-							<br><label for="shipcity">City:</label>
-							<input type="text" name="shipcity" id="shipcity" required>
-							<span id="shipcityerr" class="error"></span>
-							<br><label for="shipstate">State: </label>
-							<select name="shipstate" id="shipstate">
-								<option>--</option>
+					<p>
+					<div class="row">
+						<div class="col-25">
+							<label for="name">Name:</label>
+						</div>
+						<div class="col-75">
+							<input type="text" name="name" id="name" placeholder="First and Last Name" required>
+							<span id="nameerr" class="error"></span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label for="address">Billing Address:</label>
+						</div>
+						<div class="col-75">
+							<input type="text" name="address" id="address" placeholder="Number and Street" required>
+							<span id="addresserr" class="error"></span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label for="aptsuite">Apt/Suite #:</label>
+						</div>
+						<div class="col-75">
+							<input type="text" name="aptsuite" id="aptsuite" placeholder="Apartment or Suite #">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label for="city">City:</label>
+						</div>
+						<div class="col-75">
+							<input type="text" name="city" id="city" placeholder="City" required>
+							<span id="cityerr" class="error"></span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label for="state">State: </label>
+						</div>
+						<div class="col-75">
+							<select name="state" id="state">
 								<option value="CA">California</option>
 								<option value="CO">Colorado</option>
 								<option value="ID">Idaho</option>
@@ -92,10 +85,110 @@
 								<option value="WA">Washington</option>
 								<option value="WY">Wyoming</option>
 							</select>
-							<span id="shipstateerr" class="error"></span>
-							<br><label for="shipzip">Zip Code:</label>
-							<input type="text" name="shipzip" id="shipzip" required>
-							<span id="shipziperr" class="error"></span></span>
+							<span id="stateerr" class="error"></span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label for="zip">Zip Code:</label>
+						</div>
+						<div class="col-75">
+							<input type="text" name="zip" id="zip" placeholder="5-Digit Zip Code" required>
+							<span id="ziperr" class="error"></span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label for="email">Email:</label>
+						</div>
+						<div class="col-75">
+							<input type="email" name="email" id="email" placeholder="Email" required>
+							<span id="emailerr" class="error"></span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label for="email2">Confirm email:</label>
+						</div>
+						<div class="col-75">
+							<input type="email" name="email2" id="email2" placeholder="Confirm Email" required>
+						</div>
+					</div>
+					</p>
+				</fieldset>
+				<fieldset>
+					<legend>Shipping Address</legend>
+					<p>
+						<label><input type="checkbox" name="copy" id="copy"> Copy billing address</label>
+						<!-- span tag to hide shipping info   -->
+						<span id="shipping">
+							<div class="row">
+								<div class="col-25">
+									<label for="shipaddr">Shipping Address:</label>
+								</div>
+								<div class="col-75">
+									<input type="text" name="shipaddr" id="shipaddr" placeholder="Number and Street"
+										required>
+									<span id="shipaddrerr" class="error"></span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-25">
+									<label for="shipaptsuite">Apt/Suite #:</label>
+								</div>
+								<div class="col-75">
+									<input type="text" name="shipaptsuite" id="shipaptsuite"
+										placeholder="Apartment or Suite #">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-25">
+									<label for="shipcity">City:</label>
+								</div>
+								<div class="col-75">
+									<input type="text" name="shipcity" id="shipcity" placeholder="City" required>
+									<span id="shipcityerr" class="error"></span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-25">
+									<label for="shipstate">State: </label>
+								</div>
+								<div class="col-75">
+									<select name="shipstate" id="shipstate">
+										<option value="CA">California</option>
+										<option value="CO">Colorado</option>
+										<option value="ID">Idaho</option>
+										<option value="MT">Montana</option>
+										<option value="NE">Nebraska</option>
+										<option value="OR">Oregon</option>
+										<option value="WA">Washington</option>
+										<option value="WY">Wyoming</option>
+									</select>
+									<span id="shipstateerr" class="error"></span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-25">
+									<label for="shipzip">Zip Code:</label>
+								</div>
+								<div class="col-75">
+									<input type="text" name="shipzip" id="shipzip" placeholder="5-Digit Zip Code"
+										required>
+									<span id="shipziperr" class="error"></span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-25">
+									<label for="shiptype">Shipping Type:</label>
+								</div>
+								<div class="col-75">
+									<select name="shiptype" id="shiptype">
+										<option value="std">Standard 5-7 days</option>
+										<option value="exp">Expedited 2-5 days</option>
+									</select>
+								</div>
+							</div>
 					</p>
 				</fieldset>
 				<fieldset>
@@ -109,7 +202,7 @@
 							<th>Total</th>
 						</tr>
 						<tr>
-							<td>Standard</td>
+							<td>Classic</td>
 							<td id="price1">9.99</td>
 							<td><input type="text" size="2" name="qty1" id="1" class="qty"></td>
 							<td id="total1"></td>

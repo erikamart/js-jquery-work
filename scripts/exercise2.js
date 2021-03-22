@@ -20,7 +20,7 @@ $(function () {
 let quotes = ["'We are all here on earth to help others; what on earth the others are here for I don't know.' --W. H. Auden",
     "'I love deadlines. I like the whooshing sound they make as they fly by.' --Douglas Adams",
     "'I'm sorry, if you were right, I'd agree with you.' --Robin Williams",
-    "'When you are courting a nice girl an hour seems like a second. When you sit on a red-hot cinder a second seems like an hour. That's relativity.' --Albert Einstein",
+    "'If there's anything on this ship more important than my ego I want it caught and shot right now.' -- Zaphod Beeblebrox",
     "'I never said most of the things I said.' --Yogi Berra"];
 
 // 2. Prompt the user to enter a number. Restrict input box to allow only numbers & decimals.
@@ -44,11 +44,13 @@ for (i in websiteUrls) {
     initialList2.innerHTML += '<ul><li><a target="_blank" href = "' + websiteUrls[i] + '">' + websiteUrls[i] + '</ul></li></a>';
 }
 
-// 7. Prompt the user to enter their favorite website. 
+// 7. Prompt the user to enter their favorite website and store the input in a variable. 
+let favWeb = prompt("What is your favorite website? Ex: www.google.com");
+
+// 8. Use a loop to take the users input, replace the last list item in your initial url list with it, make it a working link too, and redisplay the updated list.
 let newUrls = websiteUrls;
-let favWeb = prompt("What is your favorite website? Include the www and .com please!");
 newUrls.shift();
-newUrls.push(favWeb);
+newUrls.push('http://' + favWeb);
 for (i in newUrls) {
     webList.innerHTML += '<ul><li><a target="_blank" href = "' + newUrls[i] + '">' + newUrls[i] + '</ul></li></a>';
 }

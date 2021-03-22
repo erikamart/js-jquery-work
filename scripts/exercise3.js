@@ -16,10 +16,10 @@ $(function () {
 
 // Exercise 3 Objectives:
 // 1. Create an array of at least 3 trivia questions.
-let questions = ["Which is the only American state to begin with the letter 'p'?", "Who played Neo in The Matrix?", "Name the chess piece that can only be moved diagonally?"];
+let questions = ["What's the only state in the U.S. that begins with the letter 'u'?", "What was the nickname of the character Keanu Reeves played in 'The Matrix'?", "What's the name of the smallest chess piece availble?"];
 
 // 2. Create a second array that contains the answers to the trivia questions in the same position as the questions.
-let answers = ["Pennsylvania", "Keanu Reeves", "Bishop"];
+let answers = ["Utah", "Neo", "Pawn"];
 
 // 3. Initialize a score variable to 0.
 let score = 0;
@@ -37,7 +37,7 @@ function quiz(counter) {
             // alert("correct");
             break;
         } else {
-            alert("Incorrect.  Please Try again.");
+            alert("Nope! Try again.");
         }
         guesses -= 1;
     }
