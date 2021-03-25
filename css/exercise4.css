@@ -184,9 +184,12 @@ fieldset legend {
 	  margin-top: 0;
 	}
 	.col-75 {
-	padding-left: 15px;
+		padding-left: 15px;
 	}
-  }
+	.col-50 {
+		margin-left: 50px;
+	}
+}
 
 /* When the browser window is ?px wide or less, change the elements. */
 @media only screen and (max-width: 491px) {
@@ -213,13 +216,14 @@ fieldset legend {
 	color: #07a;
 }
 
-.botanic {
-	color: darkgreen;
+.specifics {
+	color: #011892;
 	font-style: italic;
 }
-.col {
-	width: 20em;
-	padding: 1em;
+
+.col-50 {
+	width: 50%;
+	padding: 10px;
 	float: left;
 }
 
@@ -228,10 +232,16 @@ footer {
 }
 
 .imgdiv {
-	position: absolute;
+	position: relative;
+  float:left;
 }
 
 .pic {
-	border-bottom: thin dashed darkgreen;
+	border-bottom: thin dashed #011892;
+}
+
+#spaceHold {
+    display: none;
+    position: absolute;
 }
 /* exercise6 css */
