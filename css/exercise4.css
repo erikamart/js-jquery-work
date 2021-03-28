@@ -63,7 +63,7 @@ header {
 	font-size: 1.25em;
 	display: block;     
     max-width: 675px;
-    margin: auto;
+    margin: 0 auto 90px;
 }
 
 .orderlink {
@@ -81,7 +81,7 @@ a:link {
 
 a:visited {
 	color: black;
-	text;
+	text-decoration: underline;
 }
 
 h1, h2, h3 {

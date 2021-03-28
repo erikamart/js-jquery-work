@@ -1,3 +1,3 @@
 let d = new Date()
-$("#year").append(d.getFullYear());
+$("#year").append("&copy;" + d.getFullYear() + " ERIKA'S JS & jQUERY");
 
